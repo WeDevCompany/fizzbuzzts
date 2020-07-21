@@ -1,5 +1,12 @@
 function fizzBuzz(number: number): string {
-  return number % 3 === 0 ? 'Fizz' : '';
+  if (number % 3 === 0) {
+    return 'Fizz';
+  }
+
+  if (number % 5 === 0) {
+    return 'Buzz';
+  }
+  return '';
 }
 
 module.exports = fizzBuzz;
